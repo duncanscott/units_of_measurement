@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<diffReport>
+<diffSummary>
+<numberChangedClasses>
+0
+</numberChangedClasses>
+<numberNewClasses>
+2
+</numberNewClasses>
+<numberDeletedClasses>
+0
+</numberDeletedClasses>
+</diffSummary>
+<changedClasses>
+</changedClasses>
+<newClasses>
+<newClass>
+<classIRI>http://purl.obolibrary.org/obo/UO_0010069</classIRI>
+<classLabel>bar</classLabel>
+<newAxiom>'bar' EquivalentTo {'bar'}</newAxiom>
+<newAxiom>'bar' SubClassOf 'pascal based unit'</newAxiom>
+</newClass>
+<newClass>
+<classIRI>http://purl.obolibrary.org/obo/UO_0010071</classIRI>
+<classLabel>microgram per square centimeter</classLabel>
+<newAxiom>'microgram per square centimeter' SubClassOf 'area density unit'</newAxiom>
+</newClass>
+</newClasses>
+<deletedClasses>
+</deletedClasses>
+</diffReport>
