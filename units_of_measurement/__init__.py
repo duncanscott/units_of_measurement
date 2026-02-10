@@ -9,7 +9,7 @@ _PKG_DIR = Path(__file__).resolve().parent
 _DATA_DIR = _PKG_DIR / "data"
 if not _DATA_DIR.is_dir():
     # Running from the source tree — data lives in json/ at the repo root
-    _DATA_DIR = _PKG_DIR.parent / "json"
+    _DATA_DIR = _PKG_DIR.parent / "jsonl"
 
 
 def load(dataset="units_of_measurement"):

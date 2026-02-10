@@ -30,7 +30,7 @@ Repository = "https://github.com/duncanscott/units-of-measurement"
 packages = ["units_of_measurement"]
 
 [tool.hatch.build.targets.wheel.force-include]
-"json" = "units_of_measurement/data"
+"jsonl" = "units_of_measurement/data"
 
 [tool.hatch.build.targets.sdist]
-include = ["units_of_measurement/", "json/", "LICENSE", "README.md", "pyproject.toml"]
+include = ["units_of_measurement/", "jsonl/", "LICENSE", "README.md", "pyproject.toml"]

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 function loadJsonl(filename) {
-  return readFileSync(join(__dirname, 'json', filename), 'utf-8')
+  return readFileSync(join(__dirname, 'jsonl', filename), 'utf-8')
     .trim()
     .split('\n')
     .map(JSON.parse);

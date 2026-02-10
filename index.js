@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 function loadJsonl(filename) {
-  const filePath = path.join(__dirname, 'json', filename);
+  const filePath = path.join(__dirname, 'jsonl', filename);
   return fs.readFileSync(filePath, 'utf-8')
     .trim()
     .split('\n')

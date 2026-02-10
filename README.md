@@ -1,10 +1,10 @@
 # Units of Measurement
 
-A comprehensive collection of units of measurement in JSONL format, covering 121 physical quantities and 11 measurement systems.
+A comprehensive collection of units of measurement covering 121 physical quantities and 11 measurement systems. Available in both JSON and JSONL formats.
 
 ## Files
 
-The `json/` directory contains three JSONL files (one JSON object per line):
+The `jsonl/` directory contains three JSONL files (one JSON object per line). The `json/` directory contains the same datasets as JSON arrays.
 
 ### `units_of_measurement.jsonl` (2,959 entries)
 
@@ -114,14 +114,20 @@ const si = load('si_units');
 const uom = load('uom');
 ```
 
-### Raw JSONL (no package needed)
+### Raw Data (no package needed)
 
 ```sh
-# Download the dataset directly
-curl -LO https://raw.githubusercontent.com/duncanscott/units-of-measurement/main/json/units_of_measurement.jsonl
+# Download as JSON array
+curl -LO https://raw.githubusercontent.com/duncanscott/units-of-measurement/main/json/units_of_measurement.json
 
-# Query with jq — all Imperial length units
-jq -c 'select(.property == "length" and .system == "Imperial")' json/units_of_measurement.jsonl
+# Download as JSONL
+curl -LO https://raw.githubusercontent.com/duncanscott/units-of-measurement/main/jsonl/units_of_measurement.jsonl
+
+# Query JSON with jq — all Imperial length units
+jq -c '.[] | select(.property == "length" and .system == "Imperial")' json/units_of_measurement.json
+
+# Query JSONL with jq
+jq -c 'select(.property == "length" and .system == "Imperial")' jsonl/units_of_measurement.jsonl
 ```
 
 ## Data Sources
