@@ -21,7 +21,7 @@ The **comprehensive, merged dataset**. This is the file most users will want. It
 | `plural` | string | Plural form (e.g., "kilometers", "pounds") |
 | `property` | string | Physical quantity measured (e.g., "length", "mass") |
 | `quantity` | string | Canonicalized physical quantity label (mirrors `property`) |
-| `dimension` | object | SI base-exponent map (e.g., `{"L": 1, "T": -1}` for velocity) |
+| `dimension` | object | SI base-exponent map (e.g., `{"L": 1, "T": -1}` for velocity); `{}` for dimensionless quantities |
 | `conversion_factor` | number | Multiplier to convert to the reference unit |
 | `conversion_offset` | number | Additive offset for temperature conversions (present only for Celsius and Fahrenheit) |
 | `reference_unit` | string | The SI coherent unit that `conversion_factor` is relative to |
@@ -65,6 +65,24 @@ Each entry's `conversion_factor` is the multiplier to convert one unit to the `r
 - **pound**: `conversion_factor: 0.4535924`, `reference_unit: "kilogram"` -- 1 lb = 0.4536 kg
 
 For temperature units with a `conversion_offset`, the conversion to the reference unit (kelvin) is: `value_in_kelvin = value * conversion_factor + conversion_offset`.
+
+## Dimension
+
+The `dimension` field encodes each unit's SI base-quantity exponents as an object. The keys correspond to the seven SI base quantities:
+
+| Key | Base Quantity |
+|-----|---------------|
+| `L` | length |
+| `M` | mass |
+| `T` | time |
+| `I` | electric current |
+| `Θ` | thermodynamic temperature |
+| `N` | amount of substance |
+| `J` | luminous intensity |
+
+Only non-zero exponents are included. For example, velocity (m/s) is `{"L": 1, "T": -1}` and power (W = kg·m²/s³) is `{"M": 1, "L": 2, "T": -3}`.
+
+Dimensionless quantities — angle, solid angle, ratio, logarithmic ratio, and information — have an empty object `{}`. This follows SI convention: the radian and steradian are dimensionless derived units (dimension 1), and information units (bit, byte) fall outside the SI dimensional framework.
 
 ## Usage
 
