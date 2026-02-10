@@ -15,10 +15,13 @@ The **comprehensive, merged dataset**. This is the file most users will want. It
 | Field | Type | Description |
 |-------|------|-------------|
 | `unit` | string | Unit name (e.g., "kilometer", "pound") |
+| `canonical_unit` | string | Canonical name using `·` and `/` delimiters (e.g., `watt/meter²·kelvin`) |
 | `prefix` | string or null | SI prefix if applicable (e.g., "kilo", "milli") |
 | `symbol` | string | Unit symbol (e.g., "km", "lb") |
 | `plural` | string | Plural form (e.g., "kilometers", "pounds") |
 | `property` | string | Physical quantity measured (e.g., "length", "mass") |
+| `quantity` | string | Canonicalized physical quantity label (mirrors `property`) |
+| `dimension` | object | SI base-exponent map (e.g., `{"L": 1, "T": -1}` for velocity) |
 | `conversion_factor` | number | Multiplier to convert to the reference unit |
 | `conversion_offset` | number | Additive offset for temperature conversions (present only for Celsius and Fahrenheit) |
 | `reference_unit` | string | The SI coherent unit that `conversion_factor` is relative to |
@@ -86,6 +89,12 @@ length_units = [u for u in units if u["property"] == "length"]
 mile = next(u for u in units if u["unit"] == "mile")
 meters = 5 * mile["conversion_factor"]  # 8046.72
 
+# Canonical name & dimension vector for an acceleration unit
+accel = next(u for u in units if u["unit"] == "meter per second squared")
+accel["canonical_unit"]  # 'meter/second²'
+accel["dimension"]       # {'L': 1, 'T': -2}
+accel["quantity"] == accel["property"]  # True
+
 # List all measurement systems
 systems = sorted(set(u["system"] for u in units))
 
@@ -108,6 +117,12 @@ const massUnits = units.filter(u => u.property === 'mass');
 // Convert 10 pounds to kilograms
 const pound = units.find(u => u.unit === 'pound' && u.property === 'mass');
 const kg = 10 * pound.conversion_factor; // 4.535924
+
+// Canonical representation + dimension vector
+const accel = units.find(u => u.unit === 'meter per second squared');
+console.log(accel.canonical_unit); // 'meter/second²'
+console.log(accel.dimension);      // { L: 1, T: -2 }
+console.log(accel.quantity === accel.property); // true
 
 // Load a specific dataset
 const si = load('si_units');
