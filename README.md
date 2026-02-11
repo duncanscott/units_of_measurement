@@ -4,7 +4,7 @@ A comprehensive collection of units of measurement covering 121 physical quantit
 
 ## Files
 
-The `jsonl/` directory contains three JSONL files (one JSON object per line). The `json/` directory contains the same datasets as JSON arrays.
+The `jsonl/` directory contains JSONL files (one JSON object per line). The `json/` directory contains the same datasets as JSON arrays. The `jsonl/focused/` and `json/focused/` directories hold curated subsets derived from the canonical dataset.
 
 ### `units_of_measurement.jsonl`
 
@@ -61,6 +61,16 @@ SI base units, SI derived units with special names, and non-SI units accepted fo
 Units parsed from the Rust [uom](https://github.com/iliekturtles/uom) crate by Mike Boutin. Covers 117 physical quantities across multiple measurement systems, with conversion factors relative to the SI coherent unit for each quantity.
 
 **Fields:** `unit`, `symbol`, `plural`, `property`, `conversion_factor`, `conversion_offset` (optional), `reference_unit`, `system`
+
+### `units_with_ontologies.jsonl`
+
+Intermediate annotated copy of `units_of_measurement.jsonl` produced by `scripts/annotate_with_ontologies.py`. Contains the same records with `external_ids` and `ontology_metadata` fields populated where matches were found. Used as input to `scripts/apply_ontology_annotations.py`, which merges the annotations back into the canonical dataset.
+
+### `ontology_crosswalk_base_units.jsonl`
+
+Seven SI base units with full cross-references across all three ontologies (UO, OM, UCUM). Useful as a quick reference for how the ontology identifiers map to fundamental units.
+
+**Fields:** `unit`, `dataset_properties`, `om` (object), `uo` (object), `ucum_code`, `sources`
 
 ## Measurement Systems
 
@@ -207,6 +217,9 @@ Because each subset is derived purely from the fields in the canonical JSONL, re
 
 - **[SI Brochure](https://www.bipm.org/en/publications/si-brochure)** (9th Edition, 2019) -- Bureau International des Poids et Mesures (BIPM). Source for SI base units, derived units, and non-SI units accepted for use with the SI.
 - **[uom](https://github.com/iliekturtles/uom)** -- Units of Measurement Rust crate by Mike Boutin, licensed under MIT / Apache-2.0. Source for conversion factors, plurals, and extended unit coverage across multiple measurement systems. See [THIRD-PARTY-LICENSES](THIRD-PARTY-LICENSES) for the full license text.
+- **[Unit Ontology (UO)](http://www.obofoundry.org/ontology/uo.html)** -- OBO Foundry ontology of units. Source for `external_ids.uo` CURIEs and `ontology_metadata.uo` labels/definitions.
+- **[Ontology of units of Measure (OM) 2.0](https://github.com/HajoRijgersberg/OM)** -- Source for `ontology_metadata.om` URIs, labels, and definitions.
+- **[UCUM](https://ucum.org/)** -- Unified Code for Units of Measure (ISO 11240, HL7/FHIR). Source for `external_ids.ucum` codes, derived from the OM-to-UCUM mapping.
 
 ## Acknowledgments
 
