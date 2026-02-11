@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/duncanscott/units-of-measurement/blob/main/schema/focused/si_base_units.schema.json",
+  "title": "SI Base / Biomedical Unit",
+  "description": "A single entry in si_base_units.jsonl or biomedical_units.jsonl — units with ontology cross-references. Both focused lists share this schema.",
+  "type": "object",
+  "required": ["unit", "property", "symbol", "system", "external_ids", "ontology_metadata"],
+  "properties": {
+    "unit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit name"
+    },
+    "property": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Physical quantity"
+    },
+    "symbol": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit symbol"
+    },
+    "system": {
+      "type": "string",
+      "enum": [
+        "SI", "Metric", "Imperial", "CGS", "Nautical",
+        "Astronomical", "Atomic/Natural", "IEC", "Information",
+        "Ancient Roman", "other"
+      ],
+      "description": "Measurement system"
+    },
+    "external_ids": {
+      "type": "object",
+      "properties": {
+        "uo": {
+          "type": "string",
+          "pattern": "^UO:\\d+$",
+          "description": "Unit Ontology CURIE"
+        },
+        "ucum": {
+          "type": "string",
+          "minLength": 1,
+          "description": "UCUM code"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ontology_metadata": {
+      "type": "object",
+      "properties": {
+        "uo": {
+          "type": "object",
+          "required": ["label", "definition"],
+          "properties": {
+            "label": { "type": "string", "minLength": 1 },
+            "definition": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "om": {
+          "type": "object",
+          "required": ["uri", "label"],
+          "properties": {
+            "uri": { "type": "string", "minLength": 1 },
+            "label": { "type": "string", "minLength": 1 },
+            "definition": { "type": ["string", "null"] },
+            "ucum_code": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

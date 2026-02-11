@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/duncanscott/units-of-measurement/blob/main/schema/focused/uo_units.schema.json",
+  "title": "UO Unit",
+  "description": "A single entry in uo_units.jsonl — units with a Unit Ontology identifier.",
+  "type": "object",
+  "required": ["unit", "property", "symbol", "system", "uo_id", "ontology_metadata"],
+  "properties": {
+    "unit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit name"
+    },
+    "property": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Physical quantity"
+    },
+    "symbol": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit symbol"
+    },
+    "system": {
+      "type": "string",
+      "enum": [
+        "SI", "Metric", "Imperial", "CGS", "Nautical",
+        "Astronomical", "Atomic/Natural", "IEC", "Information",
+        "Ancient Roman", "other"
+      ],
+      "description": "Measurement system"
+    },
+    "uo_id": {
+      "type": "string",
+      "pattern": "^UO:\\d+$",
+      "description": "Unit Ontology CURIE (e.g., \"UO:0000008\")"
+    },
+    "ontology_metadata": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["label", "definition"],
+          "properties": {
+            "label": { "type": "string", "minLength": 1 },
+            "definition": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        { "type": "null" }
+      ],
+      "description": "UO label and definition, or null when metadata unavailable"
+    }
+  },
+  "additionalProperties": false
+}

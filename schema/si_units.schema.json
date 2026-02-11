@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/duncanscott/units-of-measurement/blob/main/schema/si_units.schema.json",
+  "title": "SI Unit",
+  "description": "A single entry in si_units.jsonl — SI base units, derived units, and accepted non-SI units with full prefix expansions.",
+  "type": "object",
+  "required": ["unit", "prefix", "symbol", "property", "system"],
+  "properties": {
+    "unit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit name (e.g., \"kilometer\", \"milligram\")"
+    },
+    "prefix": {
+      "type": ["string", "null"],
+      "description": "SI prefix (e.g., \"kilo\", \"milli\"), null for base units"
+    },
+    "symbol": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit symbol (e.g., \"km\", \"mg\")"
+    },
+    "property": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Physical quantity (e.g., \"length\", \"mass\")"
+    },
+    "alternate_unit": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Alternate names (e.g., [\"kilometre\"] for \"kilometer\")"
+    },
+    "system": {
+      "type": "string",
+      "const": "SI",
+      "description": "Always \"SI\""
+    }
+  },
+  "additionalProperties": false
+}

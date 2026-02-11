@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/duncanscott/units-of-measurement/blob/main/schema/focused/ucum_units.schema.json",
+  "title": "UCUM Unit",
+  "description": "A single entry in ucum_units.jsonl — units with a UCUM code and OM metadata.",
+  "type": "object",
+  "required": ["unit", "property", "symbol", "system", "ucum_code", "om_metadata"],
+  "properties": {
+    "unit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit name"
+    },
+    "property": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Physical quantity"
+    },
+    "symbol": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit symbol"
+    },
+    "system": {
+      "type": "string",
+      "enum": [
+        "SI", "Metric", "Imperial", "CGS", "Nautical",
+        "Astronomical", "Atomic/Natural", "IEC", "Information",
+        "Ancient Roman", "other"
+      ],
+      "description": "Measurement system"
+    },
+    "ucum_code": {
+      "type": "string",
+      "minLength": 1,
+      "description": "UCUM code (e.g., \"m\", \"kg\")"
+    },
+    "om_metadata": {
+      "type": "object",
+      "required": ["uri", "label"],
+      "properties": {
+        "uri": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "definition": { "type": ["string", "null"] },
+        "ucum_code": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false,
+      "description": "OM ontology metadata (flat structure, not nested under ontology_metadata)"
+    }
+  },
+  "additionalProperties": false
+}

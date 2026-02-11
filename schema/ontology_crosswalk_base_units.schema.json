@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/duncanscott/units-of-measurement/blob/main/schema/ontology_crosswalk_base_units.schema.json",
+  "title": "Ontology Crosswalk Base Unit",
+  "description": "A single entry in ontology_crosswalk_base_units.jsonl — SI base units with full UO/OM/UCUM cross-references.",
+  "type": "object",
+  "required": ["unit", "dataset_properties", "om", "uo", "ucum_code", "sources"],
+  "properties": {
+    "unit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "SI base unit name"
+    },
+    "dataset_properties": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Physical properties this unit measures in the dataset"
+    },
+    "om": {
+      "type": "object",
+      "required": ["uri", "label"],
+      "properties": {
+        "uri": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "definition": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "uo": {
+      "type": "object",
+      "required": ["uri", "curie", "label", "definition"],
+      "properties": {
+        "uri": { "type": "string", "minLength": 1 },
+        "curie": {
+          "type": "string",
+          "pattern": "^UO:\\d+$"
+        },
+        "label": { "type": "string", "minLength": 1 },
+        "definition": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "ucum_code": {
+      "type": "string",
+      "minLength": 1,
+      "description": "UCUM code"
+    },
+    "sources": {
+      "type": "object",
+      "description": "Data provenance — paths to source files used for matching",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

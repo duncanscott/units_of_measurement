@@ -213,6 +213,17 @@ This script reads the canonical JSONL and filters it into `jsonl/focused/`:
 
 Because each subset is derived purely from the fields in the canonical JSONL, re-running the script after any data change keeps the focused lists in sync without maintaining additional sources.
 
+### JSON Schemas
+
+The `schema/` directory contains [JSON Schema](https://json-schema.org/) (draft 2020-12) definitions for every JSONL dataset. To validate all files against their schemas:
+
+```sh
+pip install jsonschema
+python3 scripts/validate_schemas.py
+```
+
+See [`schema/README.md`](schema/README.md) for the full schema-to-file mapping and details on shared schemas.
+
 ## Data Sources
 
 - **[SI Brochure](https://www.bipm.org/en/publications/si-brochure)** (9th Edition, 2019) -- Bureau International des Poids et Mesures (BIPM). Source for SI base units, derived units, and non-SI units accepted for use with the SI.

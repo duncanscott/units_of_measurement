@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/duncanscott/units-of-measurement/blob/main/schema/uom.schema.json",
+  "title": "UOM Unit",
+  "description": "A single entry in uom.jsonl — units from the Rust uom crate with conversion factors.",
+  "type": "object",
+  "required": ["unit", "symbol", "plural", "property", "conversion_factor", "reference_unit", "system"],
+  "properties": {
+    "unit": {
+      "type": "string",
+      "description": "Unit name (empty for dimensionless ratio base)"
+    },
+    "symbol": {
+      "type": "string",
+      "description": "Unit symbol"
+    },
+    "plural": {
+      "type": "string",
+      "description": "Plural form"
+    },
+    "property": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Physical quantity"
+    },
+    "conversion_factor": {
+      "type": "number",
+      "description": "Multiplier to convert to the reference unit"
+    },
+    "conversion_offset": {
+      "type": "number",
+      "description": "Additive offset for temperature conversions"
+    },
+    "reference_unit": {
+      "type": "string",
+      "description": "SI coherent unit for this quantity (empty for dimensionless ratios)"
+    },
+    "system": {
+      "type": "string",
+      "enum": [
+        "SI", "Metric", "Imperial", "CGS", "Nautical",
+        "Astronomical", "Atomic/Natural", "IEC", "Information",
+        "Ancient Roman", "other"
+      ],
+      "description": "Measurement system"
+    }
+  },
+  "additionalProperties": false
+}

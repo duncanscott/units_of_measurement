@@ -6,5 +6,6 @@
 - `validate_ontology_annotations.py` — QA tool that reports coverage and checks property keywords against the UO metadata.
 - `convert_jsonl_to_json.py` — regenerates the `json/` directory as JSON arrays that mirror every JSONL file.
 - `validate_uom.py` — structural validator for the main dataset (`jsonl/units_of_measurement.jsonl`).
+- `validate_schemas.py` — validates every JSONL file against its JSON Schema in `schema/` (requires `pip install jsonschema`).
 
 Run these scripts from the repository root (e.g., `python3 scripts/generate_focused_lists.py`).

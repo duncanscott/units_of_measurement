@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/duncanscott/units-of-measurement/blob/main/schema/units_of_measurement.schema.json",
+  "title": "Unit of Measurement",
+  "description": "A single entry in units_of_measurement.jsonl — the canonical merged dataset. Also covers units_with_ontologies.jsonl, which shares the same schema.",
+  "type": "object",
+  "required": [
+    "unit",
+    "canonical_unit",
+    "symbol",
+    "property",
+    "quantity",
+    "dimension",
+    "conversion_factor",
+    "reference_unit",
+    "system"
+  ],
+  "properties": {
+    "unit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit name (e.g., \"kilometer\", \"pound\")"
+    },
+    "canonical_unit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Canonical name using · and / delimiters (e.g., \"watt/meter²·kelvin\")"
+    },
+    "prefix": {
+      "type": ["string", "null"],
+      "description": "SI prefix if applicable (e.g., \"kilo\", \"milli\")"
+    },
+    "symbol": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unit symbol (e.g., \"km\", \"lb\")"
+    },
+    "plural": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Plural form (e.g., \"kilometers\", \"pounds\")"
+    },
+    "property": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Physical quantity measured (e.g., \"length\", \"mass\")"
+    },
+    "quantity": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Canonicalized physical quantity label (mirrors property)"
+    },
+    "dimension": {
+      "type": "object",
+      "description": "SI base-exponent map (e.g., {\"L\": 1, \"T\": -1} for velocity); {} for dimensionless",
+      "propertyNames": {
+        "enum": ["L", "M", "T", "I", "Θ", "N", "J"]
+      },
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "conversion_factor": {
+      "type": "number",
+      "description": "Multiplier to convert to the reference unit"
+    },
+    "conversion_offset": {
+      "type": "number",
+      "description": "Additive offset for temperature conversions"
+    },
+    "reference_unit": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The SI coherent unit that conversion_factor is relative to"
+    },
+    "alternate_unit": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Alternate names for the unit (e.g., [\"metre\"] for \"meter\")"
+    },
+    "system": {
+      "type": "string",
+      "enum": [
+        "SI", "Metric", "Imperial", "CGS", "Nautical",
+        "Astronomical", "Atomic/Natural", "IEC", "Information",
+        "Ancient Roman", "other"
+      ],
+      "description": "Measurement system"
+    },
+    "external_ids": {
+      "type": "object",
+      "description": "Ontology identifiers",
+      "properties": {
+        "uo": {
+          "type": "string",
+          "pattern": "^UO:\\d+$",
+          "description": "Unit Ontology CURIE (e.g., \"UO:0000008\")"
+        },
+        "ucum": {
+          "type": "string",
+          "minLength": 1,
+          "description": "UCUM code (e.g., \"m\")"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ontology_metadata": {
+      "type": "object",
+      "description": "Ontology labels and definitions",
+      "properties": {
+        "uo": {
+          "type": "object",
+          "required": ["label", "definition"],
+          "properties": {
+            "label": { "type": "string", "minLength": 1 },
+            "definition": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "om": {
+          "type": "object",
+          "required": ["uri", "label"],
+          "properties": {
+            "uri": { "type": "string", "minLength": 1 },
+            "label": { "type": "string", "minLength": 1 },
+            "definition": { "type": ["string", "null"] },
+            "ucum_code": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

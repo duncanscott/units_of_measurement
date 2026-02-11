@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/duncanscott/units-of-measurement/blob/main/schema/focused/property_summary.schema.json",
+  "title": "Property Summary",
+  "description": "A single entry in property_summary.jsonl — aggregated statistics per physical property.",
+  "type": "object",
+  "required": ["property", "count", "systems", "reference_units", "annotated_records"],
+  "properties": {
+    "property": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Physical property name (e.g., \"length\", \"mass\")"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Total number of units for this property"
+    },
+    "systems": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Measurement systems that include this property"
+    },
+    "reference_units": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Reference units used for conversion"
+    },
+    "annotated_records": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of records with ontology annotations (external_ids)"
+    }
+  },
+  "additionalProperties": false
+}
