@@ -88,14 +88,74 @@ def build_property_summary(records: List[dict]) -> List[dict]:
     return output
 
 
+def build_biomedical_units(records: List[dict]) -> List[dict]:
+    result = []
+    for record in records:
+        ids = record.get("external_ids") or {}
+        metadata = record.get("ontology_metadata") or {}
+        if ids.get("uo") or (ids.get("ucum") and metadata.get("om")):
+            result.append(
+                {
+                    "unit": record["unit"],
+                    "property": record.get("property"),
+                    "symbol": record.get("symbol"),
+                    "system": record.get("system"),
+                    "external_ids": ids,
+                    "ontology_metadata": metadata,
+                }
+            )
+    return result
+
+def build_uo_units(records: List[dict]) -> List[dict]:
+    result = []
+    for record in records:
+        ids = record.get("external_ids") or {}
+        if ids.get("uo"):
+            result.append(
+                {
+                    "unit": record["unit"],
+                    "property": record.get("property"),
+                    "symbol": record.get("symbol"),
+                    "system": record.get("system"),
+                    "uo_id": ids["uo"],
+                    "ontology_metadata": (record.get("ontology_metadata") or {}).get("uo"),
+                }
+            )
+    return result
+
+
+def build_ucum_units(records: List[dict]) -> List[dict]:
+    result = []
+    for record in records:
+        ids = record.get("external_ids") or {}
+        if ids.get("ucum"):
+            result.append(
+                {
+                    "unit": record["unit"],
+                    "property": record.get("property"),
+                    "symbol": record.get("symbol"),
+                    "system": record.get("system"),
+                    "ucum_code": ids["ucum"],
+                    "om_metadata": (record.get("ontology_metadata") or {}).get("om"),
+                }
+            )
+    return result
+
 def main() -> None:
     records = load_records()
     si_base = build_si_base_units(records)
     property_summary = build_property_summary(records)
+    biomedical = build_biomedical_units(records)
+    uo_units = build_uo_units(records)
+    ucum_units = build_ucum_units(records)
     write_jsonl(FOCUSED_DIR / "si_base_units.jsonl", si_base)
     write_jsonl(FOCUSED_DIR / "property_summary.jsonl", property_summary)
+    write_jsonl(FOCUSED_DIR / "biomedical_units.jsonl", biomedical)
+    write_jsonl(FOCUSED_DIR / "uo_units.jsonl", uo_units)
+    write_jsonl(FOCUSED_DIR / "ucum_units.jsonl", ucum_units)
     print(
-        f"Wrote {len(si_base)} SI base units and {len(property_summary)} property summaries to {FOCUSED_DIR}"
+        f"Wrote {len(si_base)} SI base units, {len(property_summary)} property summaries, "
+        f"and {len(biomedical)} biomedical units to {FOCUSED_DIR}"
     )
 
 
