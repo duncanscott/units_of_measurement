@@ -25,3 +25,9 @@
 - Follow the existing history style: concise, present-tense subjects such as `add canonical metadata docs` or `bump version to 1.2.1`, limited to ~70 characters.
 - Commit bodies should list affected files, context, and sources. When editing datasets, include validator output or the jq snippets you ran.
 - Pull requests must outline scope, flag schema additions, link to upstream references, and include before/after record counts when they change.
+
+## Data Stewardship Tips
+- Update `README.md` and `THIRD-PARTY-LICENSES` when pulling in new upstream datasets or measurement systems.
+- Keep `json/` and `jsonl/` synchronized in the same commit, and ensure any regeneration script or notebook used to produce them is versioned under `scripts/` for reproducibility.
+- For ontology work, run `scripts/annotate_with_ontologies.py` (produces `jsonl/units_with_ontologies.jsonl`) followed by `scripts/apply_ontology_annotations.py` to refresh the canonical dataset, and `scripts/validate_ontology_annotations.py` to confirm coverage/property synonyms before shipping.
+- `scripts/generate_focused_lists.py` creates filtered views (`si_base_units`, `property_summary`, `biomedical_units`, `uo_units`, `ucum_units`) under `jsonl/focused/`; rerun after any data edit, then mirror the JSONL files into arrays with `scripts/convert_jsonl_to_json.py` so `json/` stays in lockstep.
