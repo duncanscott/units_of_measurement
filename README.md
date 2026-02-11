@@ -27,8 +27,28 @@ The **comprehensive, merged dataset**. This is the file most users will want. It
 | `reference_unit` | string | The SI coherent unit that `conversion_factor` is relative to |
 | `alternate_unit` | array of strings | Alternate names for the unit (present only where applicable, e.g., "metre" for "meter") |
 | `system` | string | Measurement system (see below) |
+| `external_ids` | object | Ontology identifiers when available (see below) |
+| `ontology_metadata` | object | Ontology labels and definitions when available (see below) |
 
 The combination of `unit` and `property` is unique across all entries.
+
+**Ontology Fields:**
+
+Where matches exist, `external_ids` and `ontology_metadata` provide cross-references to standard ontologies:
+
+`external_ids` may contain:
+
+| Key | Description |
+|-----|-------------|
+| `uo` | [Unit Ontology](http://www.obofoundry.org/ontology/uo.html) CURIE (e.g., `"UO:0000008"` for meter) |
+| `ucum` | [UCUM](https://ucum.org/) code (e.g., `"m"` for meter) |
+
+`ontology_metadata` may contain:
+
+| Key | Description |
+|-----|-------------|
+| `uo` | Object with `label` and `definition` from the Unit Ontology |
+| `om` | Object with `uri`, `label`, `definition`, and `ucum_code` from the [Ontology of units of Measure](https://github.com/HajoRijgersberg/OM) (OM 2.0) |
 
 ### `si_units.jsonl`
 
@@ -163,6 +183,7 @@ jq -c '.[] | select(.property == "length" and .system == "Imperial")' json/units
 
 # Query JSONL with jq
 jq -c 'select(.property == "length" and .system == "Imperial")' jsonl/units_of_measurement.jsonl
+```
 
 ### Focused Lists
 
@@ -181,7 +202,6 @@ This script reads the canonical JSONL and filters it into `jsonl/focused/`:
 - `ucum_units.jsonl` lists every unit with a UCUM code (from `external_ids.ucum`) and includes the associated OM metadata so you can track the UCUM source.
 
 Because each subset is derived purely from the fields in the canonical JSONL, re-running the script after any data change keeps the focused lists in sync without maintaining additional sources.
-```
 
 ## Data Sources
 

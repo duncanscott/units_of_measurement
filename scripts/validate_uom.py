@@ -6,10 +6,12 @@
 #   * required fields (unit, canonical_unit, symbol, property, quantity,
 #     dimension, conversion_factor, reference_unit, system)
 #   * well-formed optional fields (prefix, plural, conversion_offset,
-#     alternate_unit)
+#     alternate_unit, external_ids, ontology_metadata)
 #   * measurement system is one of the values documented in README.md
 #   * canonical_unit contains `·`/`/` delimiters instead of bare spaces
 #   * dimension uses SI base/exponential keys (L, M, T, I, Θ, N, J)
+#   * external_ids keys are from {uo, ucum} with string values
+#   * ontology_metadata keys are from {uo, om} with object values
 #
 # Usage:
 #   python3 scripts/validate_uom.py
@@ -54,7 +56,10 @@ REQUIRED_FIELDS = [
     "system",
 ]
 
-OPTIONAL_FIELDS = {"prefix", "plural", "conversion_offset", "alternate_unit"}
+OPTIONAL_FIELDS = {"prefix", "plural", "conversion_offset", "alternate_unit", "external_ids", "ontology_metadata"}
+
+EXTERNAL_ID_KEYS = {"uo", "ucum"}
+ONTOLOGY_METADATA_KEYS = {"uo", "om"}
 
 
 class ValidationError(Exception):
@@ -201,6 +206,38 @@ def _validate_field_types(index: int, record: dict) -> list[str]:
                 errors.append(
                     f"line {index}: dimension exponent for {key} must be numeric"
                 )
+
+    if "external_ids" in record:
+        ext = record["external_ids"]
+        if not isinstance(ext, dict):
+            errors.append(f"line {index}: external_ids must be an object")
+        else:
+            bad_keys = [k for k in ext if k not in EXTERNAL_ID_KEYS]
+            if bad_keys:
+                errors.append(
+                    f"line {index}: external_ids has unexpected keys: {', '.join(sorted(bad_keys))}"
+                )
+            for k, v in ext.items():
+                if not isinstance(v, str) or not v.strip():
+                    errors.append(
+                        f"line {index}: external_ids.{k} must be a non-empty string"
+                    )
+
+    if "ontology_metadata" in record:
+        meta = record["ontology_metadata"]
+        if not isinstance(meta, dict):
+            errors.append(f"line {index}: ontology_metadata must be an object")
+        else:
+            bad_keys = [k for k in meta if k not in ONTOLOGY_METADATA_KEYS]
+            if bad_keys:
+                errors.append(
+                    f"line {index}: ontology_metadata has unexpected keys: {', '.join(sorted(bad_keys))}"
+                )
+            for k, v in meta.items():
+                if not isinstance(v, dict):
+                    errors.append(
+                        f"line {index}: ontology_metadata.{k} must be an object"
+                    )
 
     return errors
 
