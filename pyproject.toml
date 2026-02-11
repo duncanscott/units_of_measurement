@@ -30,7 +30,12 @@ Repository = "https://github.com/duncanscott/units-of-measurement"
 packages = ["units_of_measurement"]
 
 [tool.hatch.build.targets.wheel.force-include]
-"jsonl" = "units_of_measurement/data"
+"jsonl/units_of_measurement.jsonl" = "units_of_measurement/data/units_of_measurement.jsonl"
+"jsonl/si_units.jsonl" = "units_of_measurement/data/si_units.jsonl"
+"jsonl/uom.jsonl" = "units_of_measurement/data/uom.jsonl"
+"jsonl/ontology_crosswalk_base_units.jsonl" = "units_of_measurement/data/ontology_crosswalk_base_units.jsonl"
+"jsonl/focused" = "units_of_measurement/data/focused"
+"schema" = "units_of_measurement/schema"
 
 [tool.hatch.build.targets.sdist]
-include = ["units_of_measurement/", "jsonl/", "LICENSE", "README.md", "pyproject.toml"]
+include = ["units_of_measurement/", "jsonl/units_of_measurement.jsonl", "jsonl/si_units.jsonl", "jsonl/uom.jsonl", "jsonl/ontology_crosswalk_base_units.jsonl", "jsonl/focused/", "schema/", "LICENSE", "README.md", "pyproject.toml"]
