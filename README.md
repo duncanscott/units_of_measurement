@@ -1,6 +1,6 @@
 # Units of Measurement
 
-A comprehensive collection of units of measurement covering 138 physical quantities and 11 measurement systems. Available in both JSON and JSONL formats.
+A comprehensive collection of units of measurement covering 138 physical quantities and 11 measurement systems. Available in both JSON and JSONL formats. The canonical JSONL combines the SI list, the Rust `uom` export, and selected OM ontology additions into one conversion-ready schema, whereas the upstream OM datasets stay focused on ontology IRIs/definitions without this project’s uniform metadata or loaders.
 
 ## Files
 
