@@ -8,7 +8,7 @@ The `jsonl/` directory contains JSONL files (one JSON object per line). The `jso
 
 ### `units_of_measurement.jsonl`
 
-The **comprehensive, merged dataset**. This is the file most users will want. It combines the SI and UOM datasets below into a single superset with a unified schema covering all fields.
+The **comprehensive, merged dataset**. This is the file most users will want. It combines the SI and UOM datasets below with selected units from the OM ontology into a single superset with a unified schema covering all fields.
 
 **Fields:**
 
@@ -229,7 +229,7 @@ See [`schema/README.md`](schema/README.md) for the full schema-to-file mapping a
 - **[SI Brochure](https://www.bipm.org/en/publications/si-brochure)** (9th Edition, 2019) -- Bureau International des Poids et Mesures (BIPM). Source for SI base units, derived units, and non-SI units accepted for use with the SI.
 - **[uom](https://github.com/iliekturtles/uom)** -- Units of Measurement Rust crate by Mike Boutin, licensed under MIT / Apache-2.0. Source for conversion factors, plurals, and extended unit coverage across multiple measurement systems. See [THIRD-PARTY-LICENSES](THIRD-PARTY-LICENSES) for the full license text.
 - **[Unit Ontology (UO)](http://www.obofoundry.org/ontology/uo.html)** -- OBO Foundry ontology of units. Source for `external_ids.uo` CURIEs and `ontology_metadata.uo` labels/definitions.
-- **[Ontology of units of Measure (OM) 2.0](https://github.com/HajoRijgersberg/OM)** -- Source for `ontology_metadata.om` URIs, labels, and definitions.
+- **[Ontology of units of Measure (OM) 2.0](https://github.com/HajoRijgersberg/OM)** -- Source for 70 unit records added in v1.4.0 and for `ontology_metadata.om` URIs, labels, and definitions.
 - **[UCUM](https://ucum.org/)** -- Unified Code for Units of Measure (ISO 11240, HL7/FHIR). Source for `external_ids.ucum` codes, derived from the OM-to-UCUM mapping.
 
 ## Acknowledgments
