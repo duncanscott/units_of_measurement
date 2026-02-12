@@ -1045,6 +1045,55 @@
     }
   },
   {
+    "unit": "gray per second",
+    "canonical_unit": "gray/second",
+    "prefix": null,
+    "symbol": "Gy/s",
+    "plural": "grays per second",
+    "property": "absorbed dose rate",
+    "quantity": "absorbed dose rate",
+    "dimension": {
+      "L": 2,
+      "T": -3
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "gray per second",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "Gy/s"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/grayPerSecond-Time",
+        "label": "gray per second",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "milligray per second",
+    "canonical_unit": "milligray/second",
+    "prefix": "milli",
+    "symbol": "mGy/s",
+    "plural": "milligrays per second",
+    "property": "absorbed dose rate",
+    "quantity": "absorbed dose rate",
+    "dimension": {
+      "L": 2,
+      "T": -3
+    },
+    "conversion_factor": 0.001,
+    "reference_unit": "gray per second",
+    "system": "SI",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/milligrayPerSecond-Time",
+        "label": "milligray per second",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "attometer per second squared",
     "canonical_unit": "attometer/second²",
     "prefix": null,
@@ -3205,6 +3254,29 @@
         "label": "zeptoradian",
         "definition": null,
         "ucum_code": "zrad"
+      }
+    }
+  },
+  {
+    "unit": "millisecond of arc",
+    "canonical_unit": "millisecond·of·arc",
+    "prefix": "milli",
+    "symbol": "mas",
+    "plural": "milliseconds of arc",
+    "property": "angle",
+    "quantity": "angle",
+    "dimension": {},
+    "conversion_factor": 4.84813681109536e-09,
+    "reference_unit": "radian",
+    "system": "Astronomical",
+    "external_ids": {
+      "ucum": "''"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/millisecond-Angle",
+        "label": "millisecond (angle)",
+        "definition": "The millisecond (angle) is a unit of angle defined as 1.0e-3 second (angle)."
       }
     }
   },
@@ -5478,6 +5550,55 @@
     "conversion_factor": 0.30515169363672057,
     "reference_unit": "kilogram per square meter",
     "system": "other"
+  },
+  {
+    "unit": "kilogram per hectare",
+    "canonical_unit": "kilogram/hectare",
+    "prefix": null,
+    "symbol": "kg/ha",
+    "plural": "kilograms per hectare",
+    "property": "areal mass density",
+    "quantity": "areal mass density",
+    "dimension": {
+      "M": 1,
+      "L": -2
+    },
+    "conversion_factor": 0.0001,
+    "reference_unit": "kilogram per square meter",
+    "system": "Metric",
+    "external_ids": {
+      "ucum": "kg/[acr_us]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerHectare",
+        "label": "kilogram per hectare",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "tonne per hectare",
+    "canonical_unit": "tonne/hectare",
+    "prefix": null,
+    "symbol": "t/ha",
+    "plural": "tonnes per hectare",
+    "property": "areal mass density",
+    "quantity": "areal mass density",
+    "dimension": {
+      "M": 1,
+      "L": -2
+    },
+    "conversion_factor": 0.1,
+    "reference_unit": "kilogram per square meter",
+    "system": "Metric",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/tonnePerHectare",
+        "label": "tonne per hectare",
+        "definition": null
+      }
+    }
   },
   {
     "unit": "per acre",
@@ -11529,6 +11650,32 @@
     }
   },
   {
+    "unit": "rem",
+    "canonical_unit": "rem",
+    "prefix": null,
+    "symbol": "rem",
+    "plural": "rems",
+    "property": "dose equivalent",
+    "quantity": "dose equivalent",
+    "dimension": {
+      "L": 2,
+      "T": -2
+    },
+    "conversion_factor": 0.01,
+    "reference_unit": "sievert",
+    "system": "CGS",
+    "external_ids": {
+      "ucum": "REM"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/rem",
+        "label": "rem",
+        "definition": "The rem is a unit of dose equivalent defined as 1.0e-2 sievert."
+      }
+    }
+  },
+  {
     "unit": "centipoise",
     "canonical_unit": "centipoise",
     "prefix": null,
@@ -13695,6 +13842,28 @@
         "label": "zettaampere",
         "definition": "The zettaampere is a unit of electric current defined as 1.0e21 ampere.",
         "ucum_code": "ZA"
+      }
+    }
+  },
+  {
+    "unit": "biot",
+    "canonical_unit": "biot",
+    "prefix": null,
+    "symbol": "Bi",
+    "plural": "biots",
+    "property": "electric current",
+    "quantity": "electric current",
+    "dimension": {
+      "I": 1
+    },
+    "conversion_factor": 10.0,
+    "reference_unit": "ampere",
+    "system": "CGS",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/biot",
+        "label": "biot",
+        "definition": "The biot is a unit of electric current defined as 10 ampere."
       }
     }
   },
@@ -19307,6 +19476,138 @@
     }
   },
   {
+    "unit": "British thermal unit (thermochemical)",
+    "canonical_unit": "British·thermal·unit·(thermochemical)",
+    "prefix": null,
+    "symbol": "Btu_th",
+    "plural": "British thermal units (thermochemical)",
+    "property": "energy",
+    "quantity": "energy",
+    "dimension": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+    },
+    "conversion_factor": 1054.35,
+    "reference_unit": "joule",
+    "system": "Imperial",
+    "external_ids": {
+      "ucum": "[Btu_th]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/BritishThermalUnit-Thermochemical",
+        "label": "British thermal unit (thermochemical)",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "calorie (thermochemical)",
+    "canonical_unit": "calorie·(thermochemical)",
+    "prefix": null,
+    "symbol": "cal_th",
+    "plural": "calories (thermochemical)",
+    "property": "energy",
+    "quantity": "energy",
+    "dimension": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+    },
+    "conversion_factor": 4.184,
+    "reference_unit": "joule",
+    "system": "Metric",
+    "external_ids": {
+      "ucum": "cal_th"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/calorie-Thermochemical",
+        "label": "calorie (thermochemical)",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "joule per cubic meter",
+    "canonical_unit": "joule/meter³",
+    "prefix": null,
+    "symbol": "J/m³",
+    "plural": "joules per cubic meter",
+    "property": "energy density",
+    "quantity": "energy density",
+    "dimension": {
+      "M": 1,
+      "L": -1,
+      "T": -2
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "joule per cubic meter",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "J/m3"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerCubicmetre",
+        "label": "joule per cubic metre",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "coulomb per kilogram",
+    "canonical_unit": "coulomb/kilogram",
+    "prefix": null,
+    "symbol": "C/kg",
+    "plural": "coulombs per kilogram",
+    "property": "exposure",
+    "quantity": "exposure",
+    "dimension": {
+      "I": 1,
+      "T": 1,
+      "M": -1
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "coulomb per kilogram",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "C/kg"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/coulombPerKilogram",
+        "label": "coulomb per kilogram",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "rhe",
+    "canonical_unit": "rhe",
+    "prefix": null,
+    "symbol": "rhe",
+    "plural": "rhes",
+    "property": "fluidity",
+    "quantity": "fluidity",
+    "dimension": {
+      "M": -1,
+      "L": 1,
+      "T": 1
+    },
+    "conversion_factor": 10.0,
+    "reference_unit": "reciprocal pascal second",
+    "system": "CGS",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/rhe",
+        "label": "rhe",
+        "definition": "The rhe is a unit of fluidity defined as 10 reciprocal pascal second."
+      }
+    }
+  },
+  {
     "unit": "attonewton",
     "canonical_unit": "attonewton",
     "prefix": "atto",
@@ -20852,6 +21153,119 @@
     }
   },
   {
+    "unit": "reciprocal second",
+    "canonical_unit": "reciprocal·second",
+    "prefix": null,
+    "symbol": "s⁻¹",
+    "plural": "reciprocal seconds",
+    "property": "frequency",
+    "quantity": "frequency",
+    "dimension": {
+      "T": -1
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "hertz",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "/s"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalSecond-Time",
+        "label": "reciprocal second",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "reciprocal day",
+    "canonical_unit": "reciprocal·day",
+    "prefix": null,
+    "symbol": "d⁻¹",
+    "plural": "reciprocal days",
+    "property": "frequency",
+    "quantity": "frequency",
+    "dimension": {
+      "T": -1
+    },
+    "conversion_factor": 1.1574074074074073e-05,
+    "reference_unit": "hertz",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalDay",
+        "label": "reciprocal day",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "reciprocal hour",
+    "canonical_unit": "reciprocal·hour",
+    "prefix": null,
+    "symbol": "h⁻¹",
+    "plural": "reciprocal hours",
+    "property": "frequency",
+    "quantity": "frequency",
+    "dimension": {
+      "T": -1
+    },
+    "conversion_factor": 0.0002777777777777778,
+    "reference_unit": "hertz",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalHour",
+        "label": "reciprocal hour",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "reciprocal minute",
+    "canonical_unit": "reciprocal·minute",
+    "prefix": null,
+    "symbol": "min⁻¹",
+    "plural": "reciprocal minutes",
+    "property": "frequency",
+    "quantity": "frequency",
+    "dimension": {
+      "T": -1
+    },
+    "conversion_factor": 0.016666666666666666,
+    "reference_unit": "hertz",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalMinute-Time",
+        "label": "reciprocal minute",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "reciprocal year",
+    "canonical_unit": "reciprocal·year",
+    "prefix": null,
+    "symbol": "a⁻¹",
+    "plural": "reciprocal years",
+    "property": "frequency",
+    "quantity": "frequency",
+    "dimension": {
+      "T": -1
+    },
+    "conversion_factor": 3.168808781402895e-08,
+    "reference_unit": "hertz",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalYear",
+        "label": "reciprocal year",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "gigahertz per second",
     "canonical_unit": "gigahertz/second",
     "prefix": null,
@@ -20925,6 +21339,31 @@
     "conversion_factor": 1000000000000.0,
     "reference_unit": "hertz per second",
     "system": "SI"
+  },
+  {
+    "unit": "liter per 100 kilometer",
+    "canonical_unit": "liter/100·kilometer",
+    "prefix": null,
+    "symbol": "L/100 km",
+    "plural": "liters per 100 kilometer",
+    "property": "fuel consumption",
+    "quantity": "fuel consumption",
+    "dimension": {
+      "L": 2
+    },
+    "conversion_factor": 1e-08,
+    "reference_unit": "square meter",
+    "system": "Metric",
+    "alternate_unit": [
+      "litre per 100 kilometre"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/litrePer100Kilometre",
+        "label": "litre per 100 kilometre",
+        "definition": null
+      }
+    }
   },
   {
     "unit": "Boltzmann constant",
@@ -28853,6 +29292,156 @@
     "system": "Metric"
   },
   {
+    "unit": "angstrom",
+    "canonical_unit": "angstrom",
+    "prefix": null,
+    "symbol": "Å",
+    "plural": "angstroms",
+    "property": "length",
+    "quantity": "length",
+    "dimension": {
+      "L": 1
+    },
+    "conversion_factor": 1e-10,
+    "reference_unit": "meter",
+    "system": "Metric",
+    "alternate_unit": [
+      "ångström"
+    ],
+    "external_ids": {
+      "ucum": "Ao"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/angstrom",
+        "label": "angstrom",
+        "definition": "The angstrom is a unit of length defined as 1.0e-10 metre."
+      }
+    }
+  },
+  {
+    "unit": "furlong",
+    "canonical_unit": "furlong",
+    "prefix": null,
+    "symbol": "fur",
+    "plural": "furlongs",
+    "property": "length",
+    "quantity": "length",
+    "dimension": {
+      "L": 1
+    },
+    "conversion_factor": 201.168,
+    "reference_unit": "meter",
+    "system": "Imperial",
+    "external_ids": {
+      "ucum": "[fur_us]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/furlong-International",
+        "label": "furlong (international)",
+        "definition": "The international furlong is a unit of length defined as 201.168 metre."
+      }
+    }
+  },
+  {
+    "unit": "gigaparsec",
+    "canonical_unit": "gigaparsec",
+    "prefix": "giga",
+    "symbol": "Gpc",
+    "plural": "gigaparsecs",
+    "property": "length",
+    "quantity": "length",
+    "dimension": {
+      "L": 1
+    },
+    "conversion_factor": 3.085678e+25,
+    "reference_unit": "meter",
+    "system": "Astronomical",
+    "external_ids": {
+      "ucum": "Gpc"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/gigaparsec",
+        "label": "gigaparsec",
+        "definition": "The gigaparsec is a unit of length defined as 1.0e9 parsec."
+      }
+    }
+  },
+  {
+    "unit": "kiloparsec",
+    "canonical_unit": "kiloparsec",
+    "prefix": "kilo",
+    "symbol": "kpc",
+    "plural": "kiloparsecs",
+    "property": "length",
+    "quantity": "length",
+    "dimension": {
+      "L": 1
+    },
+    "conversion_factor": 3.085678e+19,
+    "reference_unit": "meter",
+    "system": "Astronomical",
+    "external_ids": {
+      "ucum": "kpc"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/kiloparsec",
+        "label": "kiloparsec",
+        "definition": "The kiloparsec is a unit of length defined as 1.0e3 parsec."
+      }
+    }
+  },
+  {
+    "unit": "megaparsec",
+    "canonical_unit": "megaparsec",
+    "prefix": "mega",
+    "symbol": "Mpc",
+    "plural": "megaparsecs",
+    "property": "length",
+    "quantity": "length",
+    "dimension": {
+      "L": 1
+    },
+    "conversion_factor": 3.085678e+22,
+    "reference_unit": "meter",
+    "system": "Astronomical",
+    "external_ids": {
+      "ucum": "Mpc"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/megaparsec",
+        "label": "megaparsec",
+        "definition": "The megaparsec is a unit of length defined as 1.0e6 parsec."
+      }
+    }
+  },
+  {
+    "unit": "cicero",
+    "canonical_unit": "cicero",
+    "prefix": null,
+    "symbol": "cc",
+    "plural": "ciceros",
+    "property": "length",
+    "quantity": "length",
+    "dimension": {
+      "L": 1
+    },
+    "conversion_factor": 0.004512,
+    "reference_unit": "meter",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/cicero",
+        "label": "cicero",
+        "definition": "The cicero is a unit of length defined as 12 Didot points (approximately 4.512 mm)."
+      }
+    }
+  },
+  {
     "unit": "state per centimeter electronvolt",
     "canonical_unit": "state/centimeter·electronvolt",
     "prefix": null,
@@ -30135,6 +30724,60 @@
     "conversion_factor": 1e+21,
     "reference_unit": "candela per square meter",
     "system": "SI"
+  },
+  {
+    "unit": "lumen per watt",
+    "canonical_unit": "lumen/watt",
+    "prefix": null,
+    "symbol": "lm/W",
+    "plural": "lumens per watt",
+    "property": "luminous efficacy",
+    "quantity": "luminous efficacy",
+    "dimension": {
+      "M": -1,
+      "L": -2,
+      "T": 3,
+      "J": 1
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "lumen per watt",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "lm/W"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/lumenPerWatt",
+        "label": "lumen per watt",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "lumen per square meter",
+    "canonical_unit": "lumen/meter²",
+    "prefix": null,
+    "symbol": "lm/m²",
+    "plural": "lumens per square meter",
+    "property": "luminous emittance",
+    "quantity": "luminous emittance",
+    "dimension": {
+      "L": -2,
+      "J": 1
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "lumen per square meter",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "lm/m2"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/lumenPerSquareMetre",
+        "label": "lumen per square metre",
+        "definition": null
+      }
+    }
   },
   {
     "unit": "attolumen",
@@ -32198,6 +32841,31 @@
     }
   },
   {
+    "unit": "statweber",
+    "canonical_unit": "statweber",
+    "prefix": null,
+    "symbol": "statWb",
+    "plural": "statwebers",
+    "property": "magnetic flux",
+    "quantity": "magnetic flux",
+    "dimension": {
+      "M": 1,
+      "L": 2,
+      "T": -2,
+      "I": -1
+    },
+    "conversion_factor": 299.79,
+    "reference_unit": "weber",
+    "system": "CGS",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/statweber",
+        "label": "statweber",
+        "definition": "The statweber is a unit of magnetic flux defined as 2.9979e2 weber."
+      }
+    }
+  },
+  {
     "unit": "attotesla",
     "canonical_unit": "attotesla",
     "prefix": "atto",
@@ -32912,6 +33580,30 @@
         "label": "zettatesla",
         "definition": null,
         "ucum_code": "ZT"
+      }
+    }
+  },
+  {
+    "unit": "stattesla",
+    "canonical_unit": "stattesla",
+    "prefix": null,
+    "symbol": "statT",
+    "plural": "statteslas",
+    "property": "magnetic flux density",
+    "quantity": "magnetic flux density",
+    "dimension": {
+      "M": 1,
+      "T": -2,
+      "I": -1
+    },
+    "conversion_factor": 2997900.0,
+    "reference_unit": "tesla",
+    "system": "CGS",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/stattesla",
+        "label": "stattesla",
+        "definition": "The stattesla is a unit of magnetic flux density defined as 2.9979e6 tesla."
       }
     }
   },
@@ -38069,6 +38761,52 @@
     "system": "SI"
   },
   {
+    "unit": "gram per kilogram",
+    "canonical_unit": "gram/kilogram",
+    "prefix": null,
+    "symbol": "g/kg",
+    "plural": "grams per kilogram",
+    "property": "mass fraction",
+    "quantity": "mass fraction",
+    "dimension": {},
+    "conversion_factor": 0.001,
+    "reference_unit": "one",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "g/kg"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerKilogram",
+        "label": "gram per kilogram",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "milligram per kilogram",
+    "canonical_unit": "milligram/kilogram",
+    "prefix": null,
+    "symbol": "mg/kg",
+    "plural": "milligrams per kilogram",
+    "property": "mass fraction",
+    "quantity": "mass fraction",
+    "dimension": {},
+    "conversion_factor": 1e-06,
+    "reference_unit": "one",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "mg/kg"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerKilogram",
+        "label": "milligram per kilogram",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "centigram per joule",
     "canonical_unit": "centigram/joule",
     "prefix": null,
@@ -42564,6 +43302,32 @@
     "system": "other"
   },
   {
+    "unit": "liter per mole",
+    "canonical_unit": "liter/mole",
+    "prefix": null,
+    "symbol": "L/mol",
+    "plural": "liters per mole",
+    "property": "molar volume",
+    "quantity": "molar volume",
+    "dimension": {
+      "L": 3,
+      "N": -1
+    },
+    "conversion_factor": 0.001,
+    "reference_unit": "cubic meter per mole",
+    "system": "SI",
+    "alternate_unit": [
+      "litre per mole"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/litrePerMole",
+        "label": "litre per mole",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "dalton square ångström",
     "canonical_unit": "dalton·ångström²",
     "prefix": null,
@@ -43447,6 +44211,28 @@
     "conversion_factor": 1e+18,
     "reference_unit": "kilogram meter per second",
     "system": "SI"
+  },
+  {
+    "unit": "darcy",
+    "canonical_unit": "darcy",
+    "prefix": null,
+    "symbol": "D",
+    "plural": "darcys",
+    "property": "permeability",
+    "quantity": "permeability",
+    "dimension": {
+      "L": 2
+    },
+    "conversion_factor": 9.869233e-13,
+    "reference_unit": "square meter",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/darcy",
+        "label": "darcy",
+        "definition": "The darcy is a unit of permeability defined as 9.869233e-13 square metre."
+      }
+    }
   },
   {
     "unit": "attowatt",
@@ -46079,6 +46865,84 @@
     }
   },
   {
+    "unit": "barye",
+    "canonical_unit": "barye",
+    "prefix": null,
+    "symbol": "ba",
+    "plural": "baryes",
+    "property": "pressure",
+    "quantity": "pressure",
+    "dimension": {
+      "M": 1,
+      "L": -1,
+      "T": -2
+    },
+    "conversion_factor": 0.1,
+    "reference_unit": "pascal",
+    "system": "CGS",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/barye",
+        "label": "barye",
+        "definition": "The barye is a unit of pressure defined as 0.1 pascal."
+      }
+    }
+  },
+  {
+    "unit": "meter of mercury",
+    "canonical_unit": "meter·of·mercury",
+    "prefix": null,
+    "symbol": "m Hg",
+    "plural": "meters of mercury",
+    "property": "pressure",
+    "quantity": "pressure",
+    "dimension": {
+      "M": 1,
+      "L": -1,
+      "T": -2
+    },
+    "conversion_factor": 133322.0,
+    "reference_unit": "pascal",
+    "system": "other",
+    "alternate_unit": [
+      "metre of mercury"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/metreOfMercury",
+        "label": "metre of mercury",
+        "definition": "The metre of mercury is a unit of pressure defined as 133322 pascal."
+      }
+    }
+  },
+  {
+    "unit": "decibar",
+    "canonical_unit": "decibar",
+    "prefix": "deci",
+    "symbol": "dbar",
+    "plural": "decibars",
+    "property": "pressure",
+    "quantity": "pressure",
+    "dimension": {
+      "M": 1,
+      "L": -1,
+      "T": -2
+    },
+    "conversion_factor": 10000.0,
+    "reference_unit": "pascal",
+    "system": "Metric",
+    "external_ids": {
+      "ucum": "dbar"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/decibar",
+        "label": "decibar",
+        "definition": "The decibar is a unit of pressure defined as 1.0e-1 bar."
+      }
+    }
+  },
+  {
     "unit": "attojoule per square meter",
     "canonical_unit": "attojoule/meter²",
     "prefix": null,
@@ -46817,6 +47681,33 @@
     "conversion_factor": 1e+21,
     "reference_unit": "joule per square meter",
     "system": "SI"
+  },
+  {
+    "unit": "watt per steradian",
+    "canonical_unit": "watt/steradian",
+    "prefix": null,
+    "symbol": "W/sr",
+    "plural": "watts per steradian",
+    "property": "radiant intensity",
+    "quantity": "radiant intensity",
+    "dimension": {
+      "M": 1,
+      "L": 2,
+      "T": -3
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "watt per steradian",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "W/sr"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerSteradian",
+        "label": "watt per steradian",
+        "definition": null
+      }
+    }
   },
   {
     "unit": "attobecquerel",
@@ -47807,6 +48698,106 @@
     }
   },
   {
+    "unit": "dozen",
+    "canonical_unit": "dozen",
+    "prefix": null,
+    "symbol": "doz",
+    "plural": "dozens",
+    "property": "ratio",
+    "quantity": "ratio",
+    "dimension": {},
+    "conversion_factor": 12.0,
+    "reference_unit": "one",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/dozen",
+        "label": "dozen",
+        "definition": "Dozen is a unit of dimension one defined as 12."
+      }
+    }
+  },
+  {
+    "unit": "gross",
+    "canonical_unit": "gross",
+    "prefix": null,
+    "symbol": "gro",
+    "plural": "gross",
+    "property": "ratio",
+    "quantity": "ratio",
+    "dimension": {},
+    "conversion_factor": 144.0,
+    "reference_unit": "one",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/gross",
+        "label": "gross",
+        "definition": "Gross is a unit of dimension one defined as 144."
+      }
+    }
+  },
+  {
+    "unit": "half dozen",
+    "canonical_unit": "half·dozen",
+    "prefix": null,
+    "symbol": "half doz",
+    "plural": "half dozens",
+    "property": "ratio",
+    "quantity": "ratio",
+    "dimension": {},
+    "conversion_factor": 6.0,
+    "reference_unit": "one",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/halfDozen",
+        "label": "half dozen",
+        "definition": "Half dozen is a unit of dimension one defined as 6."
+      }
+    }
+  },
+  {
+    "unit": "hundred count",
+    "canonical_unit": "hundred·count",
+    "prefix": null,
+    "symbol": "100",
+    "plural": "hundred counts",
+    "property": "ratio",
+    "quantity": "ratio",
+    "dimension": {},
+    "conversion_factor": 100.0,
+    "reference_unit": "one",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/hundredCount",
+        "label": "hundred count",
+        "definition": "Hundred count is a unit of dimension one defined as 100."
+      }
+    }
+  },
+  {
+    "unit": "thousand piece",
+    "canonical_unit": "thousand·piece",
+    "prefix": null,
+    "symbol": "1000",
+    "plural": "thousand pieces",
+    "property": "ratio",
+    "quantity": "ratio",
+    "dimension": {},
+    "conversion_factor": 1000.0,
+    "reference_unit": "one",
+    "system": "other",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/thousandPiece",
+        "label": "thousand piece",
+        "definition": "Thousand piece is a unit of dimension one defined as 1000."
+      }
+    }
+  },
+  {
     "unit": "Rydberg constant",
     "canonical_unit": "Rydberg·constant",
     "prefix": null,
@@ -47978,6 +48969,56 @@
         "label": "one",
         "definition": "Unit one is a unit of dimension one.",
         "ucum_code": "1"
+      }
+    }
+  },
+  {
+    "unit": "kayser",
+    "canonical_unit": "kayser",
+    "prefix": null,
+    "symbol": "K",
+    "plural": "kaysers",
+    "property": "reciprocal length",
+    "quantity": "reciprocal length",
+    "dimension": {
+      "L": -1
+    },
+    "conversion_factor": 100.0,
+    "reference_unit": "reciprocal meter",
+    "system": "CGS",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/kayser",
+        "label": "kayser",
+        "definition": "The kayser is a unit of wavenumber defined as 100 reciprocal metre."
+      }
+    }
+  },
+  {
+    "unit": "ampere per watt",
+    "canonical_unit": "ampere/watt",
+    "prefix": null,
+    "symbol": "A/W",
+    "plural": "amperes per watt",
+    "property": "responsivity",
+    "quantity": "responsivity",
+    "dimension": {
+      "I": 1,
+      "M": -1,
+      "L": -2,
+      "T": 3
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "ampere per watt",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "A/W"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/amperePerWatt",
+        "label": "ampere per watt",
+        "definition": null
       }
     }
   },
@@ -50706,6 +51747,189 @@
     "system": "other"
   },
   {
+    "unit": "liter per kilogram",
+    "canonical_unit": "liter/kilogram",
+    "prefix": null,
+    "symbol": "L/kg",
+    "plural": "liters per kilogram",
+    "property": "specific volume",
+    "quantity": "specific volume",
+    "dimension": {
+      "M": -1,
+      "L": 3
+    },
+    "conversion_factor": 0.001,
+    "reference_unit": "cubic meter per kilogram",
+    "system": "Metric",
+    "alternate_unit": [
+      "litre per kilogram"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/litrePerKilogram",
+        "label": "litre per kilogram",
+        "definition": "Litre per kilogram is a unit of specific volume defined as litre divided by kilogram."
+      }
+    }
+  },
+  {
+    "unit": "jansky",
+    "canonical_unit": "jansky",
+    "prefix": null,
+    "symbol": "Jy",
+    "plural": "janskys",
+    "property": "spectral flux density",
+    "quantity": "spectral flux density",
+    "dimension": {
+      "M": 1,
+      "T": -2
+    },
+    "conversion_factor": 1e-26,
+    "reference_unit": "watt per square meter hertz",
+    "system": "Astronomical",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/jansky",
+        "label": "jansky",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "watt per hertz",
+    "canonical_unit": "watt/hertz",
+    "prefix": null,
+    "symbol": "W/Hz",
+    "plural": "watts per hertz",
+    "property": "spectral power",
+    "quantity": "spectral power",
+    "dimension": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "watt per hertz",
+    "system": "SI",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerHertz",
+        "label": "watt per hertz",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "watt per nanometer",
+    "canonical_unit": "watt/nanometer",
+    "prefix": null,
+    "symbol": "W/nm",
+    "plural": "watts per nanometer",
+    "property": "spectral power",
+    "quantity": "spectral power",
+    "dimension": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+    },
+    "conversion_factor": 1000000000.0,
+    "reference_unit": "watt per hertz",
+    "system": "SI",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerNanometre",
+        "label": "watt per nanometre",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "watt per square meter steradian",
+    "canonical_unit": "watt/meter²·steradian",
+    "prefix": null,
+    "symbol": "W/(m²·sr)",
+    "plural": "watts per square meter steradian",
+    "property": "spectral radiance",
+    "quantity": "spectral radiance",
+    "dimension": {
+      "M": 1,
+      "T": -3
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "watt per square meter steradian",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "W/m2/sr"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerSquareMetreSteradian",
+        "label": "watt per square metre steradian",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "magnitude",
+    "canonical_unit": "magnitude",
+    "prefix": null,
+    "symbol": "mag",
+    "plural": "magnitudes",
+    "property": "stellar brightness",
+    "quantity": "stellar brightness",
+    "dimension": {},
+    "conversion_factor": 1.0,
+    "reference_unit": "magnitude",
+    "system": "Astronomical",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/magnitude",
+        "label": "magnitude",
+        "definition": "The magnitude is a logarithmic measure of the brightness of celestial objects."
+      }
+    }
+  },
+  {
+    "unit": "micromagnitude",
+    "canonical_unit": "micromagnitude",
+    "prefix": "micro",
+    "symbol": "μmag",
+    "plural": "micromagnitudes",
+    "property": "stellar brightness",
+    "quantity": "stellar brightness",
+    "dimension": {},
+    "conversion_factor": 1e-06,
+    "reference_unit": "magnitude",
+    "system": "Astronomical",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/micromagnitude",
+        "label": "micromagnitude",
+        "definition": "The micromagnitude is a unit of magnitude defined as 1.0e-6 magnitude."
+      }
+    }
+  },
+  {
+    "unit": "millimagnitude",
+    "canonical_unit": "millimagnitude",
+    "prefix": "milli",
+    "symbol": "mmag",
+    "plural": "millimagnitudes",
+    "property": "stellar brightness",
+    "quantity": "stellar brightness",
+    "dimension": {},
+    "conversion_factor": 0.001,
+    "reference_unit": "magnitude",
+    "system": "Astronomical",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimagnitude",
+        "label": "millimagnitude",
+        "definition": "The millimagnitude is a unit of magnitude defined as 1.0e-3 magnitude."
+      }
+    }
+  },
+  {
     "unit": "ampere per centimeter",
     "canonical_unit": "ampere/centimeter",
     "prefix": null,
@@ -52063,6 +53287,75 @@
         "label": "zettakelvin",
         "definition": "The zettakelvin is a unit of thermodynamic temperature defined as 1.0e21 kelvin.",
         "ucum_code": "ZK"
+      }
+    }
+  },
+  {
+    "unit": "degree Celsius per second",
+    "canonical_unit": "degree·Celsius/second",
+    "prefix": null,
+    "symbol": "°C/s",
+    "plural": "degrees Celsius per second",
+    "property": "temperature rate",
+    "quantity": "temperature rate",
+    "dimension": {
+      "Θ": 1,
+      "T": -1
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "kelvin per second",
+    "system": "Metric",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsiusPerSecond-Time",
+        "label": "degree Celsius per second",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "degree Celsius per minute",
+    "canonical_unit": "degree·Celsius/minute",
+    "prefix": null,
+    "symbol": "°C/min",
+    "plural": "degrees Celsius per minute",
+    "property": "temperature rate",
+    "quantity": "temperature rate",
+    "dimension": {
+      "Θ": 1,
+      "T": -1
+    },
+    "conversion_factor": 0.016666666666666666,
+    "reference_unit": "kelvin per second",
+    "system": "Metric",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsiusPerMinute-Time",
+        "label": "degree Celsius per minute",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "degree Celsius per hour",
+    "canonical_unit": "degree·Celsius/hour",
+    "prefix": null,
+    "symbol": "°C/h",
+    "plural": "degrees Celsius per hour",
+    "property": "temperature rate",
+    "quantity": "temperature rate",
+    "dimension": {
+      "Θ": 1,
+      "T": -1
+    },
+    "conversion_factor": 0.0002777777777777778,
+    "reference_unit": "kelvin per second",
+    "system": "Metric",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsiusPerHour",
+        "label": "degree Celsius per hour",
+        "definition": null
       }
     }
   },
@@ -55733,6 +57026,122 @@
     }
   },
   {
+    "unit": "week",
+    "canonical_unit": "week",
+    "prefix": null,
+    "symbol": "wk",
+    "plural": "weeks",
+    "property": "time",
+    "quantity": "time",
+    "dimension": {
+      "T": 1
+    },
+    "conversion_factor": 604800.0,
+    "reference_unit": "second",
+    "system": "other",
+    "external_ids": {
+      "ucum": "wk"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/week",
+        "label": "week",
+        "definition": "The week is a unit of time defined as 6.04800e5 second."
+      }
+    }
+  },
+  {
+    "unit": "month",
+    "canonical_unit": "month",
+    "prefix": null,
+    "symbol": "mo",
+    "plural": "months",
+    "property": "time",
+    "quantity": "time",
+    "dimension": {
+      "T": 1
+    },
+    "conversion_factor": 2629800.0,
+    "reference_unit": "second",
+    "system": "other",
+    "external_ids": {
+      "ucum": "mo"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/month",
+        "label": "month",
+        "definition": "The month is a unit of time defined as 1/12 of a Julian year (365.25 days)."
+      }
+    }
+  },
+  {
+    "unit": "minute (sidereal)",
+    "canonical_unit": "minute·(sidereal)",
+    "prefix": null,
+    "symbol": "min (sid)",
+    "plural": "minutes (sidereal)",
+    "property": "time",
+    "quantity": "time",
+    "dimension": {
+      "T": 1
+    },
+    "conversion_factor": 59.83617,
+    "reference_unit": "second",
+    "system": "Astronomical",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/minute-Sidereal",
+        "label": "minute (sidereal)",
+        "definition": "The sidereal minute is a unit of time defined as 5.983617e1 second."
+      }
+    }
+  },
+  {
+    "unit": "gigayear",
+    "canonical_unit": "gigayear",
+    "prefix": "giga",
+    "symbol": "Gyr",
+    "plural": "gigayears",
+    "property": "time",
+    "quantity": "time",
+    "dimension": {
+      "T": 1
+    },
+    "conversion_factor": 3.15576e+16,
+    "reference_unit": "second",
+    "system": "Astronomical",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/gigayear",
+        "label": "gigayear",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "second squared",
+    "canonical_unit": "second²",
+    "prefix": null,
+    "symbol": "s²",
+    "plural": "seconds squared",
+    "property": "time squared",
+    "quantity": "time squared",
+    "dimension": {
+      "T": 2
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "second squared",
+    "system": "SI",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/second-TimeSquared",
+        "label": "second squared",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "attonewton meter",
     "canonical_unit": "attonewton·meter",
     "prefix": null,
@@ -57441,6 +58850,165 @@
         "label": "zettametre per second",
         "definition": "Zettametre per second is a unit of speed defined as zettametre divided by second.",
         "ucum_code": "Zm/s"
+      }
+    }
+  },
+  {
+    "unit": "millimeter per day",
+    "canonical_unit": "millimeter/day",
+    "prefix": null,
+    "symbol": "mm/d",
+    "plural": "millimeters per day",
+    "property": "velocity",
+    "quantity": "velocity",
+    "dimension": {
+      "L": 1,
+      "T": -1
+    },
+    "conversion_factor": 1.1574074074074072e-08,
+    "reference_unit": "meter per second",
+    "system": "SI",
+    "alternate_unit": [
+      "millimetre per day"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetrePerDay",
+        "label": "millimetre per day",
+        "definition": "Millimetre per day is a unit of speed defined as millimetre divided by day."
+      }
+    }
+  },
+  {
+    "unit": "millimeter per hour",
+    "canonical_unit": "millimeter/hour",
+    "prefix": null,
+    "symbol": "mm/h",
+    "plural": "millimeters per hour",
+    "property": "velocity",
+    "quantity": "velocity",
+    "dimension": {
+      "L": 1,
+      "T": -1
+    },
+    "conversion_factor": 2.777777777777778e-07,
+    "reference_unit": "meter per second",
+    "system": "SI",
+    "alternate_unit": [
+      "millimetre per hour"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/millimetrePerHour",
+        "label": "millimetre per hour",
+        "definition": "Millimetre per hour is a unit of speed defined as millimetre divided by hour."
+      }
+    }
+  },
+  {
+    "unit": "meter per day",
+    "canonical_unit": "meter/day",
+    "prefix": null,
+    "symbol": "m/d",
+    "plural": "meters per day",
+    "property": "velocity",
+    "quantity": "velocity",
+    "dimension": {
+      "L": 1,
+      "T": -1
+    },
+    "conversion_factor": 1.1574074074074073e-05,
+    "reference_unit": "meter per second",
+    "system": "SI",
+    "alternate_unit": [
+      "metre per day"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerDay",
+        "label": "metre per day",
+        "definition": "Metre per day is a unit of speed defined as metre divided by day."
+      }
+    }
+  },
+  {
+    "unit": "meter per minute",
+    "canonical_unit": "meter/minute",
+    "prefix": null,
+    "symbol": "m/min",
+    "plural": "meters per minute",
+    "property": "velocity",
+    "quantity": "velocity",
+    "dimension": {
+      "L": 1,
+      "T": -1
+    },
+    "conversion_factor": 0.016666666666666666,
+    "reference_unit": "meter per second",
+    "system": "SI",
+    "alternate_unit": [
+      "metre per minute"
+    ],
+    "external_ids": {
+      "ucum": "m/min"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerMinute-Time",
+        "label": "metre per minute",
+        "definition": "Metre per minute is a unit of speed defined as metre divided by minute."
+      }
+    }
+  },
+  {
+    "unit": "centimeter per day",
+    "canonical_unit": "centimeter/day",
+    "prefix": null,
+    "symbol": "cm/d",
+    "plural": "centimeters per day",
+    "property": "velocity",
+    "quantity": "velocity",
+    "dimension": {
+      "L": 1,
+      "T": -1
+    },
+    "conversion_factor": 1.1574074074074074e-07,
+    "reference_unit": "meter per second",
+    "system": "SI",
+    "alternate_unit": [
+      "centimetre per day"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/centimetrePerDay",
+        "label": "centimetre per day",
+        "definition": "Centimetre per day is a unit of speed defined as centimetre divided by day."
+      }
+    }
+  },
+  {
+    "unit": "nautical mile per hour",
+    "canonical_unit": "nautical·mile/hour",
+    "prefix": null,
+    "symbol": "nmi/h",
+    "plural": "nautical miles per hour",
+    "property": "velocity",
+    "quantity": "velocity",
+    "dimension": {
+      "L": 1,
+      "T": -1
+    },
+    "conversion_factor": 0.5144444444444445,
+    "reference_unit": "meter per second",
+    "system": "Nautical",
+    "alternate_unit": [
+      "knot (international)"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/nauticalMile-InternationalPerHour",
+        "label": "nautical mile per hour",
+        "definition": "Nautical mile per hour is a unit of speed defined as nautical mile divided by hour."
       }
     }
   },
@@ -59647,6 +61215,78 @@
     }
   },
   {
+    "unit": "pint (imperial)",
+    "canonical_unit": "pint·(imperial)",
+    "prefix": null,
+    "symbol": "pt (imp)",
+    "plural": "pints (imperial)",
+    "property": "volume",
+    "quantity": "volume",
+    "dimension": {
+      "L": 3
+    },
+    "conversion_factor": 0.00056826125,
+    "reference_unit": "cubic meter",
+    "system": "Imperial",
+    "external_ids": {
+      "ucum": "[pt_br]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/pint-Imperial",
+        "label": "pint (imperial)",
+        "definition": "The imperial pint is a unit of volume defined as 568.26125 millilitre."
+      }
+    }
+  },
+  {
+    "unit": "quart (imperial)",
+    "canonical_unit": "quart·(imperial)",
+    "prefix": null,
+    "symbol": "qt (imp)",
+    "plural": "quarts (imperial)",
+    "property": "volume",
+    "quantity": "volume",
+    "dimension": {
+      "L": 3
+    },
+    "conversion_factor": 0.0011365225,
+    "reference_unit": "cubic meter",
+    "system": "Imperial",
+    "external_ids": {
+      "ucum": "[qt_br]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/quart-Imperial",
+        "label": "quart (imperial)",
+        "definition": "The imperial quart is a unit of volume defined as 1.1365225 litre."
+      }
+    }
+  },
+  {
+    "unit": "dessertspoon",
+    "canonical_unit": "dessertspoon",
+    "prefix": null,
+    "symbol": "dsp",
+    "plural": "dessertspoons",
+    "property": "volume",
+    "quantity": "volume",
+    "dimension": {
+      "L": 3
+    },
+    "conversion_factor": 1e-05,
+    "reference_unit": "cubic meter",
+    "system": "Imperial",
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/dessertspoon",
+        "label": "dessertspoon",
+        "definition": "The dessertspoon is a unit of volume defined as 2 teaspoons (10 millilitres)."
+      }
+    }
+  },
+  {
     "unit": "Imperial fluid ounce per second",
     "canonical_unit": "Imperial·fluid·ounce/second",
     "prefix": null,
@@ -60849,6 +62489,32 @@
     "system": "SI"
   },
   {
+    "unit": "liter per hour",
+    "canonical_unit": "liter/hour",
+    "prefix": null,
+    "symbol": "L/h",
+    "plural": "liters per hour",
+    "property": "volume rate",
+    "quantity": "volume rate",
+    "dimension": {
+      "L": 3,
+      "T": -1
+    },
+    "conversion_factor": 2.777778e-07,
+    "reference_unit": "cubic meter per second",
+    "system": "Metric",
+    "alternate_unit": [
+      "litre per hour"
+    ],
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/litrePerHour",
+        "label": "litre per hour",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "state per cubic centimeter electronvolt",
     "canonical_unit": "state/centimeter³·electronvolt",
     "prefix": null,
@@ -61251,6 +62917,34 @@
     "conversion_factor": 1000000.0,
     "reference_unit": "per cubic meter",
     "system": "SI"
+  },
+  {
+    "unit": "reciprocal cubic meter",
+    "canonical_unit": "reciprocal·meter³",
+    "prefix": null,
+    "symbol": "m⁻³",
+    "plural": "reciprocal cubic meters",
+    "property": "volumetric number density",
+    "quantity": "volumetric number density",
+    "dimension": {
+      "L": -3
+    },
+    "conversion_factor": 1.0,
+    "reference_unit": "reciprocal cubic meter",
+    "system": "SI",
+    "alternate_unit": [
+      "reciprocal cubic metre"
+    ],
+    "external_ids": {
+      "ucum": "/m3"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalCubicMetre",
+        "label": "reciprocal cubic metre",
+        "definition": null
+      }
+    }
   },
   {
     "unit": "becquerel per cubic meter",

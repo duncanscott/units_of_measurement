@@ -387,6 +387,22 @@
     }
   },
   {
+    "unit": "gray per second",
+    "property": "absorbed dose rate",
+    "symbol": "Gy/s",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "Gy/s"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/grayPerSecond-Time",
+        "label": "gray per second",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "centimeter per second squared",
     "property": "acceleration",
     "symbol": "cm/s²",
@@ -1536,6 +1552,22 @@
     }
   },
   {
+    "unit": "millisecond of arc",
+    "property": "angle",
+    "symbol": "mas",
+    "system": "Astronomical",
+    "external_ids": {
+      "ucum": "''"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/millisecond-Angle",
+        "label": "millisecond (angle)",
+        "definition": "The millisecond (angle) is a unit of angle defined as 1.0e-3 second (angle)."
+      }
+    }
+  },
+  {
     "unit": "degree second",
     "property": "angular absement",
     "symbol": "° · s",
@@ -2183,6 +2215,22 @@
         "label": "kilogram per square metre",
         "definition": null,
         "ucum_code": "kg/m2"
+      }
+    }
+  },
+  {
+    "unit": "kilogram per hectare",
+    "property": "areal mass density",
+    "symbol": "kg/ha",
+    "system": "Metric",
+    "external_ids": {
+      "ucum": "kg/[acr_us]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogramPerHectare",
+        "label": "kilogram per hectare",
+        "definition": null
       }
     }
   },
@@ -3674,6 +3722,22 @@
         "label": "zettasievert",
         "definition": null,
         "ucum_code": "ZSv"
+      }
+    }
+  },
+  {
+    "unit": "rem",
+    "property": "dose equivalent",
+    "symbol": "rem",
+    "system": "CGS",
+    "external_ids": {
+      "ucum": "REM"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/rem",
+        "label": "rem",
+        "definition": "The rem is a unit of dose equivalent defined as 1.0e-2 sievert."
       }
     }
   },
@@ -7058,6 +7122,70 @@
     }
   },
   {
+    "unit": "British thermal unit (thermochemical)",
+    "property": "energy",
+    "symbol": "Btu_th",
+    "system": "Imperial",
+    "external_ids": {
+      "ucum": "[Btu_th]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/BritishThermalUnit-Thermochemical",
+        "label": "British thermal unit (thermochemical)",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "calorie (thermochemical)",
+    "property": "energy",
+    "symbol": "cal_th",
+    "system": "Metric",
+    "external_ids": {
+      "ucum": "cal_th"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/calorie-Thermochemical",
+        "label": "calorie (thermochemical)",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "joule per cubic meter",
+    "property": "energy density",
+    "symbol": "J/m³",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "J/m3"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/joulePerCubicmetre",
+        "label": "joule per cubic metre",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "coulomb per kilogram",
+    "property": "exposure",
+    "symbol": "C/kg",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "C/kg"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/coulombPerKilogram",
+        "label": "coulomb per kilogram",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "attonewton",
     "property": "force",
     "symbol": "aN",
@@ -7844,6 +7972,22 @@
         "label": "zettahertz",
         "definition": "The zettahertz is a unit of frequency defined as 1.0e21 hertz.",
         "ucum_code": "ZHz"
+      }
+    }
+  },
+  {
+    "unit": "reciprocal second",
+    "property": "frequency",
+    "symbol": "s⁻¹",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "/s"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalSecond-Time",
+        "label": "reciprocal second",
+        "definition": null
       }
     }
   },
@@ -9871,6 +10015,86 @@
     }
   },
   {
+    "unit": "angstrom",
+    "property": "length",
+    "symbol": "Å",
+    "system": "Metric",
+    "external_ids": {
+      "ucum": "Ao"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/angstrom",
+        "label": "angstrom",
+        "definition": "The angstrom is a unit of length defined as 1.0e-10 metre."
+      }
+    }
+  },
+  {
+    "unit": "furlong",
+    "property": "length",
+    "symbol": "fur",
+    "system": "Imperial",
+    "external_ids": {
+      "ucum": "[fur_us]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/furlong-International",
+        "label": "furlong (international)",
+        "definition": "The international furlong is a unit of length defined as 201.168 metre."
+      }
+    }
+  },
+  {
+    "unit": "gigaparsec",
+    "property": "length",
+    "symbol": "Gpc",
+    "system": "Astronomical",
+    "external_ids": {
+      "ucum": "Gpc"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/gigaparsec",
+        "label": "gigaparsec",
+        "definition": "The gigaparsec is a unit of length defined as 1.0e9 parsec."
+      }
+    }
+  },
+  {
+    "unit": "kiloparsec",
+    "property": "length",
+    "symbol": "kpc",
+    "system": "Astronomical",
+    "external_ids": {
+      "ucum": "kpc"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/kiloparsec",
+        "label": "kiloparsec",
+        "definition": "The kiloparsec is a unit of length defined as 1.0e3 parsec."
+      }
+    }
+  },
+  {
+    "unit": "megaparsec",
+    "property": "length",
+    "symbol": "Mpc",
+    "system": "Astronomical",
+    "external_ids": {
+      "ucum": "Mpc"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/megaparsec",
+        "label": "megaparsec",
+        "definition": "The megaparsec is a unit of length defined as 1.0e6 parsec."
+      }
+    }
+  },
+  {
     "unit": "kilogram per meter",
     "property": "linear mass density",
     "symbol": "kg/m",
@@ -10029,6 +10253,38 @@
         "label": "stilb",
         "definition": "The stilb is a unit of luminance defined as 1.0e4 candela per square metre.",
         "ucum_code": "sb"
+      }
+    }
+  },
+  {
+    "unit": "lumen per watt",
+    "property": "luminous efficacy",
+    "symbol": "lm/W",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "lm/W"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/lumenPerWatt",
+        "label": "lumen per watt",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "lumen per square meter",
+    "property": "luminous emittance",
+    "symbol": "lm/m²",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "lm/m2"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/lumenPerSquareMetre",
+        "label": "lumen per square metre",
+        "definition": null
       }
     }
   },
@@ -13580,6 +13836,38 @@
     }
   },
   {
+    "unit": "gram per kilogram",
+    "property": "mass fraction",
+    "symbol": "g/kg",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "g/kg"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/gramPerKilogram",
+        "label": "gram per kilogram",
+        "definition": null
+      }
+    }
+  },
+  {
+    "unit": "milligram per kilogram",
+    "property": "mass fraction",
+    "symbol": "mg/kg",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "mg/kg"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/milligramPerKilogram",
+        "label": "milligram per kilogram",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "gram per joule",
     "property": "mass per energy",
     "symbol": "g/J",
@@ -14709,6 +14997,22 @@
     }
   },
   {
+    "unit": "decibar",
+    "property": "pressure",
+    "symbol": "dbar",
+    "system": "Metric",
+    "external_ids": {
+      "ucum": "dbar"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/decibar",
+        "label": "decibar",
+        "definition": "The decibar is a unit of pressure defined as 1.0e-1 bar."
+      }
+    }
+  },
+  {
     "unit": "joule per square meter",
     "property": "radiant exposure",
     "symbol": "J/m²",
@@ -14739,6 +15043,22 @@
         "label": "megajoule per square metre",
         "definition": null,
         "ucum_code": "MJ/m2"
+      }
+    }
+  },
+  {
+    "unit": "watt per steradian",
+    "property": "radiant intensity",
+    "symbol": "W/sr",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "W/sr"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerSteradian",
+        "label": "watt per steradian",
+        "definition": null
       }
     }
   },
@@ -15302,6 +15622,22 @@
     }
   },
   {
+    "unit": "ampere per watt",
+    "property": "responsivity",
+    "symbol": "A/W",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "A/W"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/amperePerWatt",
+        "label": "ampere per watt",
+        "definition": null
+      }
+    }
+  },
+  {
     "unit": "attosteradian",
     "property": "solid angle",
     "symbol": "asr",
@@ -15619,6 +15955,22 @@
         "label": "cubic metre per kilogram",
         "definition": "Cubic metre per kilogram is a unit of specific volume defined as cubic metre divided by kilogram.",
         "ucum_code": "m3/kg"
+      }
+    }
+  },
+  {
+    "unit": "watt per square meter steradian",
+    "property": "spectral radiance",
+    "symbol": "W/(m²·sr)",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "W/m2/sr"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/wattPerSquareMetreSteradian",
+        "label": "watt per square metre steradian",
+        "definition": null
       }
     }
   },
@@ -17070,6 +17422,38 @@
     }
   },
   {
+    "unit": "week",
+    "property": "time",
+    "symbol": "wk",
+    "system": "other",
+    "external_ids": {
+      "ucum": "wk"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/week",
+        "label": "week",
+        "definition": "The week is a unit of time defined as 6.04800e5 second."
+      }
+    }
+  },
+  {
+    "unit": "month",
+    "property": "time",
+    "symbol": "mo",
+    "system": "other",
+    "external_ids": {
+      "ucum": "mo"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/month",
+        "label": "month",
+        "definition": "The month is a unit of time defined as 1/12 of a Julian year (365.25 days)."
+      }
+    }
+  },
+  {
     "unit": "meganewton meter",
     "property": "torque",
     "symbol": "MN · m",
@@ -17572,6 +17956,22 @@
         "label": "zettametre per second",
         "definition": "Zettametre per second is a unit of speed defined as zettametre divided by second.",
         "ucum_code": "Zm/s"
+      }
+    }
+  },
+  {
+    "unit": "meter per minute",
+    "property": "velocity",
+    "symbol": "m/min",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "m/min"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/metrePerMinute-Time",
+        "label": "metre per minute",
+        "definition": "Metre per minute is a unit of speed defined as metre divided by minute."
       }
     }
   },
@@ -18854,6 +19254,38 @@
     }
   },
   {
+    "unit": "pint (imperial)",
+    "property": "volume",
+    "symbol": "pt (imp)",
+    "system": "Imperial",
+    "external_ids": {
+      "ucum": "[pt_br]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/pint-Imperial",
+        "label": "pint (imperial)",
+        "definition": "The imperial pint is a unit of volume defined as 568.26125 millilitre."
+      }
+    }
+  },
+  {
+    "unit": "quart (imperial)",
+    "property": "volume",
+    "symbol": "qt (imp)",
+    "system": "Imperial",
+    "external_ids": {
+      "ucum": "[qt_br]"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/quart-Imperial",
+        "label": "quart (imperial)",
+        "definition": "The imperial quart is a unit of volume defined as 1.1365225 litre."
+      }
+    }
+  },
+  {
     "unit": "cubic meter per second",
     "property": "volume rate",
     "symbol": "m³/s",
@@ -18952,6 +19384,22 @@
         "label": "cubic millimetre",
         "definition": null,
         "ucum_code": "mm3"
+      }
+    }
+  },
+  {
+    "unit": "reciprocal cubic meter",
+    "property": "volumetric number density",
+    "symbol": "m⁻³",
+    "system": "SI",
+    "external_ids": {
+      "ucum": "/m3"
+    },
+    "ontology_metadata": {
+      "om": {
+        "uri": "http://www.ontology-of-units-of-measure.org/resource/om-2/reciprocalCubicMetre",
+        "label": "reciprocal cubic metre",
+        "definition": null
       }
     }
   },

@@ -23,6 +23,17 @@
     "annotated_records": 21
   },
   {
+    "property": "absorbed dose rate",
+    "count": 2,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "gray per second"
+    ],
+    "annotated_records": 1
+  },
+  {
     "property": "acceleration",
     "count": 26,
     "systems": [
@@ -61,8 +72,9 @@
   },
   {
     "property": "angle",
-    "count": 33,
+    "count": 34,
     "systems": [
+      "Astronomical",
       "Imperial",
       "SI",
       "other"
@@ -70,7 +82,7 @@
     "reference_units": [
       "radian"
     ],
-    "annotated_records": 21
+    "annotated_records": 22
   },
   {
     "property": "angular absement",
@@ -167,15 +179,16 @@
   },
   {
     "property": "areal mass density",
-    "count": 4,
+    "count": 6,
     "systems": [
+      "Metric",
       "SI",
       "other"
     ],
     "reference_units": [
       "kilogram per square meter"
     ],
-    "annotated_records": 3
+    "annotated_records": 4
   },
   {
     "property": "areal number density",
@@ -285,14 +298,15 @@
   },
   {
     "property": "dose equivalent",
-    "count": 25,
+    "count": 26,
     "systems": [
+      "CGS",
       "SI"
     ],
     "reference_units": [
       "sievert"
     ],
-    "annotated_records": 21
+    "annotated_records": 22
   },
   {
     "property": "dynamic viscosity",
@@ -354,7 +368,7 @@
   },
   {
     "property": "electric current",
-    "count": 31,
+    "count": 32,
     "systems": [
       "Atomic/Natural",
       "CGS",
@@ -521,7 +535,7 @@
   },
   {
     "property": "energy",
-    "count": 82,
+    "count": 84,
     "systems": [
       "Atomic/Natural",
       "CGS",
@@ -532,7 +546,40 @@
     "reference_units": [
       "joule"
     ],
-    "annotated_records": 48
+    "annotated_records": 50
+  },
+  {
+    "property": "energy density",
+    "count": 1,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "joule per cubic meter"
+    ],
+    "annotated_records": 1
+  },
+  {
+    "property": "exposure",
+    "count": 1,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "coulomb per kilogram"
+    ],
+    "annotated_records": 1
+  },
+  {
+    "property": "fluidity",
+    "count": 1,
+    "systems": [
+      "CGS"
+    ],
+    "reference_units": [
+      "reciprocal pascal second"
+    ],
+    "annotated_records": 0
   },
   {
     "property": "force",
@@ -550,7 +597,7 @@
   },
   {
     "property": "frequency",
-    "count": 30,
+    "count": 35,
     "systems": [
       "SI",
       "other"
@@ -558,7 +605,7 @@
     "reference_units": [
       "hertz"
     ],
-    "annotated_records": 21
+    "annotated_records": 22
   },
   {
     "property": "frequency drift",
@@ -568,6 +615,17 @@
     ],
     "reference_units": [
       "hertz per second"
+    ],
+    "annotated_records": 0
+  },
+  {
+    "property": "fuel consumption",
+    "count": 1,
+    "systems": [
+      "Metric"
+    ],
+    "reference_units": [
+      "square meter"
     ],
     "annotated_records": 0
   },
@@ -692,7 +750,7 @@
   },
   {
     "property": "length",
-    "count": 64,
+    "count": 70,
     "systems": [
       "Ancient Roman",
       "Astronomical",
@@ -700,12 +758,13 @@
       "Imperial",
       "Metric",
       "Nautical",
-      "SI"
+      "SI",
+      "other"
     ],
     "reference_units": [
       "meter"
     ],
-    "annotated_records": 37
+    "annotated_records": 42
   },
   {
     "property": "linear density of states",
@@ -791,6 +850,28 @@
     "annotated_records": 6
   },
   {
+    "property": "luminous efficacy",
+    "count": 1,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "lumen per watt"
+    ],
+    "annotated_records": 1
+  },
+  {
+    "property": "luminous emittance",
+    "count": 1,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "lumen per square meter"
+    ],
+    "annotated_records": 1
+  },
+  {
     "property": "luminous flux",
     "count": 25,
     "systems": [
@@ -826,8 +907,9 @@
   },
   {
     "property": "magnetic flux",
-    "count": 26,
+    "count": 27,
     "systems": [
+      "CGS",
       "SI",
       "other"
     ],
@@ -838,8 +920,9 @@
   },
   {
     "property": "magnetic flux density",
-    "count": 27,
+    "count": 28,
     "systems": [
+      "CGS",
       "SI",
       "other"
     ],
@@ -922,6 +1005,17 @@
       "kilogram per square meter second"
     ],
     "annotated_records": 0
+  },
+  {
+    "property": "mass fraction",
+    "count": 2,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "one"
+    ],
+    "annotated_records": 2
   },
   {
     "property": "mass per energy",
@@ -1030,7 +1124,7 @@
   },
   {
     "property": "molar volume",
-    "count": 6,
+    "count": 7,
     "systems": [
       "SI",
       "other"
@@ -1065,6 +1159,17 @@
     "annotated_records": 1
   },
   {
+    "property": "permeability",
+    "count": 1,
+    "systems": [
+      "other"
+    ],
+    "reference_units": [
+      "square meter"
+    ],
+    "annotated_records": 0
+  },
+  {
     "property": "power",
     "count": 35,
     "systems": [
@@ -1091,17 +1196,18 @@
   },
   {
     "property": "pressure",
-    "count": 56,
+    "count": 59,
     "systems": [
       "CGS",
       "Imperial",
       "Metric",
-      "SI"
+      "SI",
+      "other"
     ],
     "reference_units": [
       "pascal"
     ],
-    "annotated_records": 28
+    "annotated_records": 29
   },
   {
     "property": "radiant exposure",
@@ -1114,6 +1220,17 @@
       "joule per square meter"
     ],
     "annotated_records": 2
+  },
+  {
+    "property": "radiant intensity",
+    "count": 1,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "watt per steradian"
+    ],
+    "annotated_records": 1
   },
   {
     "property": "radioactivity",
@@ -1129,7 +1246,7 @@
   },
   {
     "property": "ratio",
-    "count": 11,
+    "count": 16,
     "systems": [
       "other"
     ],
@@ -1140,13 +1257,25 @@
   },
   {
     "property": "reciprocal length",
-    "count": 10,
+    "count": 11,
     "systems": [
+      "CGS",
       "SI",
       "other"
     ],
     "reference_units": [
       "reciprocal meter"
+    ],
+    "annotated_records": 1
+  },
+  {
+    "property": "responsivity",
+    "count": 1,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "ampere per watt"
     ],
     "annotated_records": 1
   },
@@ -1211,8 +1340,9 @@
   },
   {
     "property": "specific volume",
-    "count": 51,
+    "count": 52,
     "systems": [
+      "Metric",
       "SI",
       "other"
     ],
@@ -1220,6 +1350,50 @@
       "cubic meter per kilogram"
     ],
     "annotated_records": 1
+  },
+  {
+    "property": "spectral flux density",
+    "count": 1,
+    "systems": [
+      "Astronomical"
+    ],
+    "reference_units": [
+      "watt per square meter hertz"
+    ],
+    "annotated_records": 0
+  },
+  {
+    "property": "spectral power",
+    "count": 2,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "watt per hertz"
+    ],
+    "annotated_records": 0
+  },
+  {
+    "property": "spectral radiance",
+    "count": 1,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "watt per square meter steradian"
+    ],
+    "annotated_records": 1
+  },
+  {
+    "property": "stellar brightness",
+    "count": 3,
+    "systems": [
+      "Astronomical"
+    ],
+    "reference_units": [
+      "magnitude"
+    ],
+    "annotated_records": 0
   },
   {
     "property": "surface electric current density",
@@ -1281,6 +1455,17 @@
     "annotated_records": 24
   },
   {
+    "property": "temperature rate",
+    "count": 3,
+    "systems": [
+      "Metric"
+    ],
+    "reference_units": [
+      "kelvin per second"
+    ],
+    "annotated_records": 0
+  },
+  {
     "property": "thermal conductance",
     "count": 46,
     "systems": [
@@ -1328,7 +1513,7 @@
   },
   {
     "property": "time",
-    "count": 35,
+    "count": 39,
     "systems": [
       "Astronomical",
       "SI",
@@ -1337,7 +1522,18 @@
     "reference_units": [
       "second"
     ],
-    "annotated_records": 26
+    "annotated_records": 28
+  },
+  {
+    "property": "time squared",
+    "count": 1,
+    "systems": [
+      "SI"
+    ],
+    "reference_units": [
+      "second squared"
+    ],
+    "annotated_records": 0
   },
   {
     "property": "torque",
@@ -1353,7 +1549,7 @@
   },
   {
     "property": "velocity",
-    "count": 35,
+    "count": 41,
     "systems": [
       "Atomic/Natural",
       "Imperial",
@@ -1364,11 +1560,11 @@
     "reference_units": [
       "meter per second"
     ],
-    "annotated_records": 24
+    "annotated_records": 25
   },
   {
     "property": "volume",
-    "count": 83,
+    "count": 86,
     "systems": [
       "Ancient Roman",
       "Imperial",
@@ -1378,12 +1574,13 @@
     "reference_units": [
       "cubic meter"
     ],
-    "annotated_records": 66
+    "annotated_records": 68
   },
   {
     "property": "volume rate",
-    "count": 74,
+    "count": 75,
     "systems": [
+      "Metric",
       "SI",
       "other"
     ],
@@ -1418,15 +1615,16 @@
   },
   {
     "property": "volumetric number density",
-    "count": 17,
+    "count": 18,
     "systems": [
       "SI",
       "other"
     ],
     "reference_units": [
-      "per cubic meter"
+      "per cubic meter",
+      "reciprocal cubic meter"
     ],
-    "annotated_records": 5
+    "annotated_records": 6
   },
   {
     "property": "volumetric number rate",
